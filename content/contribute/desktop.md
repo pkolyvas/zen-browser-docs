@@ -10,12 +10,14 @@ Contributing to the Zen Browser Desktop project is a great way to get involved w
 
 Before you begin, ensure you have the following tools and versions installed, installed:
 
-- [**Git**](https://git-scm.com/): Version control system to clone the repository and manage your code.
-- [**Node.js**](https://nodejs.org/): Required for building the browser.
-- [**npm**](https://www.npmjs.com/): Node package manager, which comes with Node.js.
-- [**MozillaBuild (windows only)**](https://wiki.mozilla.org/MozillaBuild): Meta-installer required to build the browser.
-- [**Mercurial/TortoiseHg**](https://www.mercurial-scm.org/downloads): Required by Mozilla scripts, with its install directory added to PATH. 
-- [**Python v3.11**](https://www.python.org/): Required by build scripts, with its install directory added to PATH.
+| Tool | Recommended Version | Description |
+|------|-------------------|-------------|
+| [Git](https://git-scm.com/) | Latest | Version control system to clone the repository and manage your code |
+| [Node.js](https://nodejs.org/) | 22 LTS | Required for building the browser |
+| [npm](https://www.npmjs.com/) | Latest | Node package manager, which comes with Node.js |
+| [MozillaBuild (windows only)](https://wiki.mozilla.org/MozillaBuild) | Latest | Meta-installer required to build the browser |
+| [Mercurial/TortoiseHg](https://www.mercurial-scm.org/downloads) | Latest | Required by Mozilla scripts, with its install directory added to PATH |
+| [Python](https://www.python.org/) | v3.11 | Required by build scripts, with its install directory added to PATH |
 
 ## Run Locally
 
@@ -27,7 +29,7 @@ cd desktop
 git submodule update --init --recursive --depth 1
 ```
 
-Configure Virtual Environments
+Configure virtual environments
 ```bash
 python3.11 -m venv .venv
 source .venv/bin/activate
