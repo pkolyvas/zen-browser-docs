@@ -8,14 +8,14 @@ Contributing to the Zen Browser Desktop project is a great way to get involved w
 
 ## Prerequisites
 
-Before you begin, ensure you have the following tools installed:
+Before you begin, ensure you have the following tools and versions installed, installed:
 
 - [**Git**](https://git-scm.com/): Version control system to clone the repository and manage your code.
 - [**Node.js**](https://nodejs.org/): Required for building the browser.
 - [**npm**](https://www.npmjs.com/): Node package manager, which comes with Node.js.
-- [**MozillaBuild**](https://wiki.mozilla.org/MozillaBuild): Meta-installer required to build the browser.
-- [**Mercurial/TortoiseHg**](https://www.mercurial-scm.org/downloads): Required by Mozilla scripts, with its install directory added to PATH.
-- [**Python**](https://www.python.org/): Required by build scripts, with its install directory added to PATH.
+- [**MozillaBuild (windows only)**](https://wiki.mozilla.org/MozillaBuild): Meta-installer required to build the browser.
+- [**Mercurial/TortoiseHg**](https://www.mercurial-scm.org/downloads): Required by Mozilla scripts, with its install directory added to PATH. 
+- [**Python v3.11**](https://www.python.org/): Required by build scripts, with its install directory added to PATH.
 
 ## Run Locally
 
@@ -25,6 +25,13 @@ Clone the project
 git clone --depth 1 https://github.com/zen-browser/desktop.git
 cd desktop
 git submodule update --init --recursive --depth 1
+```
+
+Configure Virtual Environments
+```bash
+python3.11 -m venv .venv
+source .venv/bin/activate
+nvm use 22.11.0
 ```
 
 Install dependencies
